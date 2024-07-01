@@ -1,0 +1,197 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card-container{
+    width: 100%;
+    min-height: 100vh;
+    min-height: 750px;
+    background: url(https://res.cloudinary.com/muhammederdem/image/upload/v1536405234/starwars/death_star.jpg) center no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-attachment: fixed;
+
+}
+
+.card{
+    display: flex;
+    width: 400px;
+    height: 400px;
+    position: relative;
+    margin: 30px 10px;
+}
+
+.card-style-img{
+    object-fit: contain;
+    width: 100%;
+    object-position: left center;
+    opacity: 0.2;
+    transform: rotate(-90deg) translateY(-50%);
+    left: 10px;
+    position: absolute;
+}
+
+
+.card-section-1{
+    height: 100%;
+    width: 50%;
+    background-color: rgb(255, 25, 64);
+    border-radius: 20px;
+}
+
+.card-section-2{
+    height: 70%;
+    width: 85%;
+    background-color: rgb(34, 33, 48);
+    border-radius: 20px;
+    position: absolute;
+    top: 50px;
+    left: 15%;
+    display: flex;
+}
+
+.card-section-2-part-1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+}
+
+.card-img{
+    position: absolute;
+    left: -60px;
+    width: 160px;
+    height: 160px;
+}
+
+.card-section-2-part-2{
+    height: 100%;
+    width: 70%;
+}
+
+.card-heading{
+    color: white;
+    margin-top: 20px;
+    font-size: 1.8em;
+}
+
+.card-price{
+    color: white;
+    margin-top: 5px;
+    font-size: 1.2em;
+    font-weight: lighter;
+}
+
+.size-duriabilty{
+    width: 100%;
+    min-height: 30%;
+    display: flex;
+}
+
+.size-duriabilty-section-1{
+    flex-grow: 1;
+
+}
+
+.size-duriabilty-section-2{
+    flex-grow: .1;
+    /* border: 1px solid rgb(255, 32, 65); */
+    /* height: 30px; */
+    background-color: red;
+    margin-top: 20px;
+}
+
+.size-duriabilty-section-3{
+    flex-grow: 1;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    /* margin-right: 10px; */
+}
+
+.size-duriabilty-section-1-heading{
+    color: white;
+    font-size: 1em;
+    margin-top: 20px;
+}
+
+.size-item{
+    list-style-type: none;
+    display: flex;
+}
+
+.size-item-list{
+    /* flex-grow: 1; */
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: gray;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 5px;
+}
+
+.duriabalty{
+    width: 60px;
+    height: 60px;
+    background-color: gray;
+    border-radius: 50%;
+    color: white;
+    font-size: 1.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 3px solid rgb(255, 79, 108);
+    border-top: 3px solid rgb(255, 79, 108);
+    border-right: 3px solid rgb(255, 79, 108);
+    margin-top: 20px;
+}
+
+
+
+.duriabalty-text{
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.buttons{
+    display: flex;
+    /* margin-top: 20px; */
+}
+
+.cart{
+    padding: 10px 30px;
+    border: none;
+    background-color: #ff3658;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-top: 10px;
+}
+
+.cart:hover{
+    background-color: #ff5a75;
+}
+
+.fav{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s linear;
+    margin-top: 10px;
+    margin-left: 20px;
+}
